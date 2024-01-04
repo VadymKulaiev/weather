@@ -1,13 +1,89 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app::before {
+  content: '';
+  background: url('./images/beautiful-nature-landscape-with-mountains-and-lake.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.inp-field {
+  text-align: center;
+  /* padding: 1rem; */
+  margin-top: 5rem;
+}
+
+.inp-field input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  bottom: 1px solid grey;
+  background: rgba(255, 255, 255, 0.5);
+  color: #5d4e4e;
+}
+
+.container {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.header {
+  font-size: 6rem;
+  color: #283763;
+}
+
+.temp h1 {
+  color: #a56b6b;
+  font-size: 7rem;
+  margin-top: 1rem;
+  margin-bottom: -4rem;
+}
+
+.minmax {
+  margin: 6vh auto;
+  font-size: 2rem;
+  max-width: 400px;
+  color: #1424a1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.desc p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.footer {
+  margin: 6vh auto;
+  color: #ffffff;
+  background: rgba(198, 28, 177, 0.5);
+  border-radius: 15px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.feels p,
+.humidity p,
+.wind p,
+.pressure p {
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.pressure {
+  color: #ffffff;
+
 }
